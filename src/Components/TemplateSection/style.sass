@@ -1,0 +1,36 @@
+.template-section
+  display: grid
+  grid-template-areas: 'header header header' 'nav main main' 'footer footer footer'
+  grid-template-rows: 80px 1fr 80px
+  grid-template-columns: 20% 1fr 1fr
+  grid-gap: 10px
+  min-height: 100vh
+  margin: 0
+
+
+  header, footer, main, nav
+    padding: 20px
+    background: black
+    color: white
+
+
+  &__header
+    grid-area: header
+
+
+  &__footer
+    grid-area: footer
+
+
+  &__main
+    grid-area: main
+
+
+  &__nav
+    grid-area: nav
+
+
+  &__btns
+    display: flex
+    align-items: center
+    justify-content: space-between

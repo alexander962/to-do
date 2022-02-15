@@ -1,0 +1,37 @@
+.columns-section
+  padding: 40px 20px
+
+
+  &__1
+    display: grid
+    grid-template-rows: repeat(3, 1fr)
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 1vw
+
+
+  &__1 > div
+    font-size: 5vw
+    padding: .5em
+    background: red
+    text-align: center
+
+
+  &__2
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+    grid-gap: 2vw
+    margin-top: 52px
+
+
+  &__2 > div
+    font-size: 5vw
+    padding: .5em
+    background: green
+    text-align: center
+
+
+  &_btn
+    display: block
+    margin-top: 40px
+    text-align: right
+
